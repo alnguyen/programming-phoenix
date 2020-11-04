@@ -1,5 +1,5 @@
 defmodule Rumbl.MultimediaTest do
-  use Rumbl.DataCase
+  use Rumbl.DataCase, async: true
 
   alias Rumbl.Multimedia
   alias Rumbl.Multimedia.Category
