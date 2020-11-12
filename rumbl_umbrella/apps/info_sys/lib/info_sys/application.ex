@@ -8,6 +8,7 @@ defmodule InfoSys.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      {InfoSys.Counter, 5}
       # Starts a worker by calling: InfoSys.Worker.start_link(arg)
       # {InfoSys.Worker, arg}
     ]
